@@ -1,0 +1,19 @@
+import { Component, OnInit } from '@angular/core';
+import { CartService } from '../services/cart/cart.service';
+
+@Component({
+  selector: 'app-shipping',
+  templateUrl: './shipping.component.html',
+  styleUrls: ['./shipping.component.css']
+})
+export class ShippingComponent implements OnInit {
+  shippingCost;
+  constructor(
+    private cartService: CartService
+  ) { }
+
+  ngOnInit() {
+    this.shippingCost = this.cartService.getShippingPrices();
+  }
+
+}

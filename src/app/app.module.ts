@@ -7,6 +7,9 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { InfoDeliveryComponent } from './info-delivery/info-delivery.component';
+import { CartComponent } from './cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { InfoDeliveryComponent } from './info-delivery/info-delivery.component';
     ProductAlertsComponent,
     ProductDetailsComponent,
     ProductListComponent,
-    InfoDeliveryComponent
+    InfoDeliveryComponent,
+    CartComponent,
+    ShippingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
