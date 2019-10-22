@@ -12,6 +12,8 @@ import { CartComponent } from './cart/cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ShippingComponent } from './shipping/shipping.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HeroesComponent } from './heroes/heroes.component';
     InfoDeliveryComponent,
     CartComponent,
     ShippingComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
